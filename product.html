@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="img/fav.svg">
+</head>
+<body
+        <!------------------ Header-->
+        <header>
+            <div class="container">
+                <div class="navbar">
+                    <a href="index.html"><img src="img/logo.svg" alt="" class="logo"></a>
+                    <img id="menu-icon" src="img/menu.svg" alt="" class="mobile-menu-img push small-icon">
+                </div>
+                <nav id="menu-nav" class="main-nav">
+                    <ul id="menu-ul" class="menu-ul">
+                        <!--Create about, product, contact html pages -->
+                        <li><img id="close-icon" src="img/exit.svg" alt="" class="close-mobile-icon small-icon"></li>
+                        <li><a href="index.html" class="home">Home</a></li>
+                        <li><a href="about.html" class="about-us">About Us</a></li>
+                        <li><a href="index.html#contact" class="contact">Contact</a></li>
+                        <li><a href="product.html">Our Products</a></li>
+    
+                        <li class="terms"><a href="#">Terms and Conditions</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    	<!---------------------section-->
+    <section class="main">
+        <div class="container pdt">
+            <h2>Coming Soon....</h2>
+        </div>
+    </section>
+    	<!---------------------Footer-->
+	<footer>
+		<div class="container">
+			<a href="index.html">HomeCakes</a> &copy; <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script>
+		</div>
+	</footer>
+
+	<!---------------------Script-->
+	<script>
+
+		//---------------------Showing side menu----
+
+		const menu_icon = document.getElementById("menu-icon");
+		const close_icon = document.getElementById("close-icon");
+		const nav_menu = document.getElementById("menu-nav");
+
+		menu_icon.onclick =
+			function () {
+				nav_menu.classList.add("show-nav");
+			}
+
+		//---------------------Hide side menu----
+		close_icon.onclick =
+			function () {
+				nav_menu.classList.remove("show-nav");
+			}
+
+
+	</script>
+
+</body>
+</html>
